@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{784F1F2E-A76A-42DF-B308-8150169B4111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackages", "{8EDDBA11-842E-4A02-9F6C-26329E1F450B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BBDA8665-D2AF-4FCC-9DCE-E511365D138D}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EDDBA11-842E-4A02-9F6C-26329E1F450B} = {784F1F2E-A76A-42DF-B308-8150169B4111}
+		{BBDA8665-D2AF-4FCC-9DCE-E511365D138D} = {784F1F2E-A76A-42DF-B308-8150169B4111}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {789EB32C-4525-4F54-A4BC-C8102663D477}
+	EndGlobalSection
+EndGlobal
