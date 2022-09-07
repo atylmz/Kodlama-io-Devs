@@ -15,6 +15,7 @@ namespace Core.Persistence.Repositories
         T Add(T entity);
         T Update(T entity);
         T Delete(T entity);
+        T SoftDelete(T entity);
         IPaginate<T> GetList(Expression<Func<T, bool>>? predicate = null,
                          Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
                          Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,

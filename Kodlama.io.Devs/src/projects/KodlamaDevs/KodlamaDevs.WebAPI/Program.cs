@@ -1,3 +1,4 @@
+using KodlamaDevs.Application;
 using KodlamaDevs.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddPersistenceServices(builder.Configuration);
-
+builder.Services.AddApplicationServices();
 
 
 

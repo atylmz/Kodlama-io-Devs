@@ -1,4 +1,6 @@
-﻿using KodlamaDevs.Persistence.Contexts;
+﻿using KodlamaDevs.Application.Services.Repositories;
+using KodlamaDevs.Persistence.Contexts;
+using KodlamaDevs.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,7 @@ namespace KodlamaDevs.Persistence
                 options.UseSqlServer(
                     configuration.GetConnectionString("MyKodlamaDevsConnectionString")));
 
+            services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
 
             return services;
         }
